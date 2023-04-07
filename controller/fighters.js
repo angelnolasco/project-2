@@ -11,7 +11,7 @@ fighterRouter.get('/' , async (req,res)=>{
 
 // NEW
 fighterRouter.get('/new' , (req,res)=>{
-    res.send('Alex Pereira')
+    res.render('fighters/new.ejs')
 })
 
 // DELETE

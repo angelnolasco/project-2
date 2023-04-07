@@ -7,17 +7,21 @@
     <title>project-2</title>
 </head>
 <body>
-    <h1>FIGHTERS</h1>
-    <nav>
-        <ul>
+   <main>
+       <h1>list of fighters</h1>
+       <ul>
+        <% for(let i = 0; i < fighter.length; i++) { %>
             <li>
-                <a href="/">back to home</a>
+                <a href="/fighter/<%= fighter[i]._id%>"><%= fighter[i].name%></a>
             </li>
-            <li>
-            <a href="/fighter/new"> add a fighter</a>
-            </li>
-        </ul>
-   </nav>
-   
+       <% } %>
+       </ul>
+   </main>
+   <nav>
+       <ul>
+           <a href="/">back to home</a><br>
+           <a href="/fighter/new"> add a fighter</a><br>
+       </ul>
+  </nav>
 </body>
 </html>
