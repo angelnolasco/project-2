@@ -17,9 +17,12 @@
     </ul>
     <p>KO:<%= fighter.ko%></p>
     <p>Age:<%= fighter.age%></p>
- <form action="/fighter/<%= fighter.id%>?_method=delete" method="post">
+ 
+    <form action="/fighter/<%= fighter._id%>?_method=delete" method="post">
     <button type="submit"> delete</button>
-</form>
+    </form>
+  
+    <a href="/fighter/<%= fighter._id%>/edit">update fighter </a>
   
 </body>
 </html>
