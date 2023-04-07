@@ -4,8 +4,9 @@ const Fighter = require('../models/fighters.js')
 
 
 // INDEX
-fighterRouter.get('/' , (req,res)=>{
-    res.send('jon jones')
+fighterRouter.get('/' , async (req,res)=>{
+    const findFighter = await Fighter.find({})
+    res.render('fighters/index.ejs',{ fighter: findFighter})
 })
 
 // NEW
@@ -20,6 +21,10 @@ fighterRouter.get('/new' , (req,res)=>{
 
 
 // CREATE
+fighterRouter.post('/',(req,res)=>{
+    const createdPost =  Fighter(req.body)
+    createdPost.save().then(res.send('Islam Makhachev'))
+})
 
 
 // EDIT

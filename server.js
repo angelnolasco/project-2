@@ -20,11 +20,13 @@ app.use(methodOverride('_method'))
 
 // CONTROLLERS
 const fighterController = require('./controller/fighters')
-app.use('/', fighterController)
+app.use('/fighter', fighterController)
 
 
-
-
+// MAIN PAGE
+app.get('/', (req,res)=>{
+    res.render('index.ejs')
+})
 
 
 app.listen(process.env.PORT, ()=>{
