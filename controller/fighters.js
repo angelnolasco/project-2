@@ -26,6 +26,8 @@ fighterRouter.get('/new' , (req,res)=>{
 
 
 // SHOW 
-
+fighterRouter.get('/:id', (req,res)=>{
+    res.send( 'alexander volkanovski')
+})
 
 module.exports = fighterRouter
