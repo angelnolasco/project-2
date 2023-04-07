@@ -15,7 +15,10 @@ fighterRouter.get('/new' , (req,res)=>{
 })
 
 // DELETE
-
+fighterRouter.delete('/:id', async(req,res)=>{
+    await Fighter.findByIdAndDelete(req.params.id,req.body)
+    res.redirect('/fighter')
+})
 
 // UPDATE
 
@@ -23,7 +26,7 @@ fighterRouter.get('/new' , (req,res)=>{
 // CREATE
 fighterRouter.post('/',(req,res)=>{
     const createdPost =  Fighter(req.body)
-    createdPost.save().then(res.send('Islam Makhachev'))
+    createdPost.save().then(res.redirect('/fighter'))
 })
 
 
@@ -33,8 +36,9 @@ fighterRouter.get('/:id/edit', (req,res)=>{
 })
 
 // SHOW 
-fighterRouter.get('/:id', (req,res)=>{
-    res.send( 'alexander volkanovski')
+fighterRouter.get('/:id', async (req,res)=>{
+    const findFighter = await Fighter.findById(req.params.id).exec()
+    res.render( 'fighters/show.ejs',{fighter: findFighter})
 })
 
 module.exports = fighterRouter
