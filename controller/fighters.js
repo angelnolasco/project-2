@@ -9,7 +9,9 @@ fighterRouter.get('/' , (req,res)=>{
 })
 
 // NEW
-
+fighterRouter.get('/new' , (req,res)=>{
+    res.send('Alex Pereira')
+})
 
 // DELETE
 
