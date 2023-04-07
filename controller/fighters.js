@@ -23,7 +23,9 @@ fighterRouter.get('/new' , (req,res)=>{
 
 
 // EDIT
-
+fighterRouter.get('/:id/edit', (req,res)=>{
+    res.send('Gilbert Burns')
+})
 
 // SHOW 
 fighterRouter.get('/:id', (req,res)=>{
