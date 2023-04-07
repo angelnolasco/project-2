@@ -4,7 +4,9 @@ const Fighter = require('../models/fighters.js')
 
 
 // INDEX
-
+fighterRouter.get('/' , (req,res)=>{
+    res.send('jon jones')
+})
 
 // NEW
 

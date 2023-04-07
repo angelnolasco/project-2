@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const methodOverride = require('method-override')
+const fighterRouter = 
 require('dotenv').config()
 const app = express()
 
@@ -17,13 +18,15 @@ app.use(express.urlencoded({ extended: false}))
 app.use(methodOverride('_method'))
 
 
+// CONTROLLERS
+const fighterController = require('./controller/fighters')
+app.use('/', fighterController)
 
 
 
 
 
 
-
-app.listen(PORT, ()=>{
-    console.log(`fighing on port ${PORT}`);
+app.listen(process.env.PORT, ()=>{
+    console.log(`fighing on port ${process.env.PORT}`);
 })
