@@ -8,7 +8,7 @@ const fighterSchema = new Schema({
     height: String,
     reach: String,
     wins: String,
-    loses: String,
+    losses: String,
     city: String,
     ko: String,
     sub: String,

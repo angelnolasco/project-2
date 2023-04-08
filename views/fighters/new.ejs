@@ -7,17 +7,41 @@
     <title>project-2</title>
 </head>
 <body>
-    <h1>Add a fighter to our list</h1>
+    <h1>Add a fighter to your list</h1>
     <form action="/fighter" method="POST">
        
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"/><br>
+        <input type="text" id="name" name="name" required/><br>
 
         <label for="age">Age:</label>
-       <input type="text" id="age" name="age"required/><br>
+       <input type="text" id="age" name="age" required/><br>
 
+       <label for="weight">Weight:</label>
+       <input type="text" id="weight" name="weight"  required/><br>
+
+       <label for="height">Height:</label>
+       <input type="text" id="height" name="height"  required><br>
+       
+       <label for="reach">Reach:</label>
+       <input type="text" id="reach" name="reach"  required><br>
+       
+       <label for="wins">Wins:</label>
+       <input type="number" id="Wins" name="wins" min="0" required><br>
+       
+       <label for="losses">Losses:</label>
+       <input type="number" id="losses" name="losses" min="0"required><br>
+       
+       <label for="city">City:</label>
+       <input type="text" id="city" name="city" required><br>
+       
        <label for="ko">KO:</label>
-       <input type="number" id="ko" name="ko" min="0" required/><br>
+       <input type="number" id="ko" name="ko" min="0" required><br>
+       
+       <label for="sub">Submission:</label>
+       <input type="number" id="sub" name="sub" min="0" required><br>
+
+
+
        
        <input type="submit" value="create"/>
 

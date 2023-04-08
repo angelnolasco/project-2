@@ -15,14 +15,26 @@
             <% } %>
           <% } %>
     </ul>
-    <p>KO:<%= fighter.ko%></p>
+    <p>Name:<%= fighter.name%></p>
     <p>Age:<%= fighter.age%></p>
+    <p>Weight:<%= fighter.weight%></p>
+    <p>Height:<%= fighter.height%></p>
+    <P>Reach:<%= fighter.reach %></P>
+    <p>Wins:<%= fighter.wins%></p>
+    <P>Losses:<%= fighter.losses%></P>
+    <p>City:<%= fighter.city%></p>
+    <p>KO:<%= fighter.ko%></p>
+    <p>Submission:<%= fighter.sub%></p>
  
     <form action="/fighter/<%= fighter._id%>?_method=delete" method="post">
     <button type="submit"> delete</button>
     </form>
-  
+  <ul>
     <a href="/fighter/<%= fighter._id%>/edit">update fighter </a>
-  
+  </ul>
+  <ul>
+    <a href="/fighter">see list</a>
+ 
+  </ul>
 </body>
 </html>
