@@ -7,30 +7,26 @@
     <title>welcome page</title>
 </head>
 <body>
-    <h1> Angel's Fight Club </h1>
+    <!-- <h1> Angel's Fight Club </h1>
     <h2>The home of the true MMA fan</h2>
 
 
     <nav>
      <a href="/fighter"> see fighters </a>
-    </nav>
-    <!-- <div class="full-screen-contanier">
-       <div class="login-contanier">
-        <h1 class="login-title">Angel's Fight Club</h1>
-        <form class="form">
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <span class="msg">Valid Email</span>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <span class="msg">incorrect Password</span>
-            </div>
-            <button type="submit"> see fighter</button>
-        </form>
-       </div>
-    </div> -->
+    </nav> -->
+    <h1> Angel's Fight Club</h1>
+    <form action="/fighter" method="POST">
+       <div>
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" required>
+       </div> 
+       <div>
+        <label for="password"> password</label>
+        <input type="password" id="password" name="password" required>
+       </div> 
+       <button type="submit">login</button>
+    </form>
+    <a href="/register">create an account</a>
+   
 </body>
 </html>

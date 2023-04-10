@@ -21,6 +21,7 @@ fighterRouter.delete('/:id', async(req,res)=>{
 })
 
 // UPDATE
+
 fighterRouter.put('/:id', async(req,res)=>{
     await Fighter.findByIdAndUpdate(req.params.id,req.body)
     res.redirect('/fighter')
