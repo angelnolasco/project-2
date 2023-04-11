@@ -25,7 +25,7 @@
     <p>City:<%= fighter.city%></p>
     <p>KO:<%= fighter.ko%></p>
     <p>Submission:<%= fighter.sub%></p>
-    <p>imagw:<%= fighter.img%></p>
+    <img src="<%= fighter.img%>">
  
     <form action="/fighter/<%= fighter._id%>?_method=delete" method="post">
     <button type="submit"> delete</button>
