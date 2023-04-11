@@ -12,6 +12,7 @@ const fighterSchema = new Schema({
     city: String,
     ko: String,
     sub: String,
+    img: String,
 })
 
 const Fighter = mongoose.model('Fighter',fighterSchema)

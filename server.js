@@ -33,7 +33,7 @@ const fighterController = require('./controller/fighters')
 app.use('/fighter', fighterController)
 
 const userController = require('./controller/user')
-app.use('/register',userController)
+app.use('/user',userController)
 
 
 // LOGIN PAGE
@@ -42,5 +42,5 @@ app.get('/', (req,res)=>{
 })
 
 app.listen(process.env.PORT, ()=>{
-    console.log(`fighing on port ${process.env.PORT}`);
+    console.log(`fighting on port ${process.env.PORT}`);
 })
