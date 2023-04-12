@@ -18,6 +18,7 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 
 app.use(express.urlencoded({ extended: false}))
 app.use(methodOverride('_method'))
+app.use('/public', express.static("public"))
 
 app.use(
     session({
@@ -34,6 +35,7 @@ app.use('/fighter', fighterController)
 
 const userController = require('./controller/user')
 app.use('/user',userController)
+
 
 
 // LOGIN PAGE
