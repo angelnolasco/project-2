@@ -1,0 +1,54 @@
+/* CSS for Form */
+form {
+    margin: 30px auto;
+    width: 50%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  body{
+    background-image: url("https://st.depositphotos.com/1784615/1331/i/450/depositphotos_13310561-stock-photo-old-rusty-metal-net-isolated.jpg");
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #e6e6e6;
+  }
+  
+  input[type="submit"],
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover,
+  a:hover {
+    background-color: #3e8e41;
+  }
+  
+  
+  
+  

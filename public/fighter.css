@@ -5,6 +5,13 @@ main {
     padding: 20px;
     background-color: #f4f4f4;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  body{
+    background-image: url("https://e0.pxfuel.com/wallpapers/465/814/desktop-wallpaper-cage-mma-ufc-cage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
   }
   
   h1 {

@@ -1,0 +1,74 @@
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background-image: url("https://st.depositphotos.com/1784615/1331/i/450/depositphotos_13310561-stock-photo-old-rusty-metal-net-isolated.jpg");
+  }
+  
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(210, 203, 203, 0.2);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="submit"],
+  a {
+    display: block;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  input[type="submit"]:hover,
+  a:hover {
+    background-color: #3e8e41;
+  }
+  
+  input[type="submit"]:active,
+  a:active {
+    background-color: #23562b;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2) inset;
+  }
+  
+  input[type="submit"]:focus,
+  a:focus {
+    outline: none;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  
+  
